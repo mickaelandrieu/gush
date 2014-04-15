@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b132556df99762c5da583797eb83be8d",
+    "hash": "033e8de039f4babd5fb7b6fe030ecac5",
     "packages": [
         {
             "name": "ddd/slug",
@@ -51,6 +51,101 @@
                 "slug"
             ],
             "time": "2013-08-15 13:34:26"
+        },
+        {
+            "name": "gentle/bitbucket-api",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gentlero/bitbucket-api.git",
+                "reference": "7929c508bfab14240ff935d04fa5a95ac2f0f37c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gentlero/bitbucket-api/zipball/7929c508bfab14240ff935d04fa5a95ac2f0f37c",
+                "reference": "7929c508bfab14240ff935d04fa5a95ac2f0f37c",
+                "shasum": ""
+            },
+            "require": {
+                "jacobkiers/oauth": "1.0.10",
+                "kriswallsmith/buzz": "0.10",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7",
+                "satooshi/php-coveralls": "~0.6"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Bitbucket\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandru G.",
+                    "email": "alex@gentle.ro",
+                    "homepage": "http://www.sebi.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bitbucket API wrapper for PHP >= 5.3",
+            "homepage": "https://bitbucket.org/gentlero/bitbucket-api",
+            "keywords": [
+                "api",
+                "bitbucket"
+            ],
+            "time": "2014-02-24 15:51:58"
+        },
+        {
+            "name": "gushphp/gush-bitbucket-adapter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gushphp/gush-bitbucket-adapter.git",
+                "reference": "3af1172953203fc02400ab3165729e3178f9d8bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gushphp/gush-bitbucket-adapter/zipball/3af1172953203fc02400ab3165729e3178f9d8bd",
+                "reference": "3af1172953203fc02400ab3165729e3178f9d8bd",
+                "shasum": ""
+            },
+            "require": {
+                "gentle/bitbucket-api": "~0.2",
+                "gushphp/gush": "*",
+                "gushphp/gush-github-adapter": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gush\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sfcon'2012 community project",
+                    "email": "cordoval@gmail.com",
+                    "homepage": "http://github.com/cordoval/fazer"
+                },
+                {
+                    "name": "Raul Rodriguez",
+                    "email": "raulrodriguez782@gmail.com"
+                }
+            ],
+            "description": "Bitbucket adapter for Gush",
+            "time": "2014-04-14 04:21:18"
         },
         {
             "name": "gushphp/gush-github-adapter",
@@ -356,6 +451,65 @@
             "time": "2014-01-27 18:15:52"
         },
         {
+            "name": "jacobkiers/oauth",
+            "version": "1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jacobkiers/OAuth.git",
+                "reference": "4f352302a1d633cf9037c905cfd36bc629030846"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jacobkiers/OAuth/zipball/4f352302a1d633cf9037c905cfd36bc629030846",
+                "reference": "4f352302a1d633cf9037c905cfd36bc629030846",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "*",
+                "phpunit/phpunit": "3.7.*@stable",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JacobKiers\\OAuth": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gary Jones",
+                    "email": "gary@garyjones.co.uk",
+                    "role": "developer"
+                },
+                {
+                    "name": "Jacob Kiers",
+                    "email": "jacob@alphacomm.nl",
+                    "role": "developer"
+                },
+                {
+                    "name": "Alexandre Eher",
+                    "role": "Composer packager"
+                },
+                {
+                    "name": "Andy Smith",
+                    "role": "original author"
+                }
+            ],
+            "description": "Based on Andy Smith's basic PHP library for OAuth 1.0a",
+            "homepage": "https://github.com/jacobkiers/OAuth",
+            "keywords": [
+                "oauth"
+            ],
+            "time": "2014-02-21 17:39:51"
+        },
+        {
             "name": "justinrainbow/json-schema",
             "version": "1.3.6",
             "source": {
@@ -539,6 +693,54 @@
                 "github"
             ],
             "time": "2014-01-05 04:09:12"
+        },
+        {
+            "name": "kriswallsmith/buzz",
+            "version": "v0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/Buzz.git",
+                "reference": "759432d66387e3433d3b06cb6f773b97225b9b17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/759432d66387e3433d3b06cb6f773b97225b9b17",
+                "reference": "759432d66387e3433d3b06cb6f773b97225b9b17",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Buzz": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Lightweight HTTP client",
+            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "keywords": [
+                "curl",
+                "http client"
+            ],
+            "time": "2013-05-19 03:41:15"
         },
         {
             "name": "seld/jsonlint",
@@ -1675,7 +1877,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "herrera-io/version": 20
+        "herrera-io/version": 20,
+        "gushphp/gush-bitbucket-adapter": 20
     },
     "platform": {
         "php": ">=5.4",
